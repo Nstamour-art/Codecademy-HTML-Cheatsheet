@@ -1,33 +1,281 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="./resources/css/index.css" type="text/css" />
-		<title>Dasmoto's Arts &amp; Crafts</title>
-	</head>
-	<body>
-		<div id="header">
-			<h1>Dasmoto's Arts &amp; Crafts</h1>
-		</div>
-		<div id="brushes">
-			<h2 class="section">Brushes</h2>
-			<img src="./resources/images/hacksaw.jpeg" />
-			<h3 class="itemName">Hacksaw Brushes</h3>
-			<p>Made of the highest quality oak, Hacksaw brushes are known for their weight and ability to hold paint in large amounts. Available in different sizes.</p>
-			<p class="price">Starting at $3.00 / brush</p>
-		</div>
-		<div id="frames">
-			<h2 class="section">Frames</h2>
-			<img src="./resources/images/frames.jpeg" />
-			<h3 class="itemName">Art Frames (assorted)</h3>
-			<p>Assorted frames made of different material, including MDF, birchwood, and PDE. Select frames can be sanded and painted according to your needs.</p>
-			<p class="price">Starting at $2.00 / brush</p>
-		</div>
-		<div id="paint">
-			<h2 class="section">Paint</h2>
-			<img src="./resources/images/finnish.jpeg" />
-			<h3 class="itemName">Clean Finnish Paint</h3>
-			<p>Imported paint from Finland. Over 256 colors available in store, varying in quantity (1 oz. to 8 oz.). Clean Finnish paint microbinds to canvas, increasing the finish and logevity of any artwork.</p>
-			<p class="price">Starting at $5.00 / tube</p>
-		</div>
-	</body>
+<head>
+    <title>HTML Tags Reference</title>
+    <link href="./resources/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Defines the navbar section -->
+    <div class="navbar">
+        <h1 id="title">Cheatsheet</h1>
+        <ul>
+            <li>
+                <a href="#structure">Structure</a>
+            </li>
+            <li>
+                <a href="#formatting">Text Formatting</a>
+            </li>
+            <li>
+                <a href="#navigation">Navigation</a>
+            </li>
+            <li>
+                <a href="#multimedia">Multimedia</a>
+            </li>
+            <li>
+                <a href="#list">List</a>
+            </li>
+            <li>
+                <a href="#table">Table</a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Main content for the cheatsheet -->
+    <div id="main">
+        <h2 class="heading">HTML Tags</h1>
+    
+        <!-- Structure and Document Tags Section -->
+        <h3 class="section" id="structure">Structure and Document Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Attributes</th>
+                    <th>Self-Closing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p class="tag">&lt;html&gt;</p></td>
+                    <td>HTML</td>
+                    <td>Defines the root of the HTML document</td>
+                    <td>lang</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;head&gt;</p></td>
+                    <td>Head</td>
+                    <td>Contains metadata about the document</td>
+                    <td>None</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;body&gt;</p></td>
+                    <td>Body</td>
+                    <td>Contains the document's content</td>
+                    <td>None</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;title&gt;</p></td>
+                    <td>Title</td>
+                    <td>Sets the document's title</td>
+                    <td>None</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <!-- Text Formatting Tags Section -->
+        <h3 class="section" id="formatting">Text Formatting Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Attributes</th>
+                    <th>Self-Closing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p class="tag">&lt;h1&gt;, &lt;h2&gt;, etc.</td>
+                    <td>Headings</td>
+                    <td>Defines headings, from largest to smallest</td>
+                    <td>None</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;p&gt;</p></td>
+                    <td>Paragraph</td>
+                    <td>Defines a paragraph of text</td>
+                    <td>None</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;br&gt;</p></td>
+                    <td>Line Break</td>
+                    <td>Inserts a line break</td>
+                    <td>None</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;strong&gt;</p></td>
+                    <td>Strong</td>
+                    <td>Displays bold text for importance</td>
+                    <td>None</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;em&gt;</p></td>
+                    <td>Emphasis</td>
+                    <td>Displays italicized text for emphasis</td>
+                    <td>None</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <!-- Link and Navigation Tags Section -->
+        <h3 class="section" id="navigation">Link and Navigation Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Attributes</th>
+                    <th>Self-Closing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p class="tag">&lt;a&gt;</p></td>
+                    <td>Anchor (Link)</td>
+                    <td>Defines a hyperlink</td>
+                    <td>href, target</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;nav&gt;</p></td>
+                    <td>Navigation</td>
+                    <td>Defines a navigation section</td>
+                    <td>None</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <!-- Image and Multimedia Tags Section -->
+        <h3 class="section" id="multimedia">Image and Multimedia Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Attributes</th>
+                    <th>Self-Closing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p class="tag">&lt;img&gt;</p></td>
+                    <td>Image</td>
+                    <td>Embeds an image</td>
+                    <td>src, alt, width, height</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;video&gt;</p></td>
+                    <td>Video</td>
+                    <td>Embeds a video</td>
+                    <td>controls, autoplay, loop, src</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;audio&gt;</p></td>
+                    <td>Audio</td>
+                    <td>Embeds audio content</td>
+                    <td>controls, autoplay, src</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <!-- List Tags Section -->
+        <h3 class="section" id="list">List Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Attributes</th>
+                    <th>Self-Closing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p class="tag">&lt;ul&gt;</p></td>
+                    <td>Unordered List</td>
+                    <td>Defines a bullet-point list</td>
+                    <td>None</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;ol&gt;</p></td>
+                    <td>Ordered List</td>
+                    <td>Defines a numbered list</td>
+                    <td>type</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;li&gt;</p></td>
+                    <td>List Item</td>
+                    <td>Defines an item in a list</td>
+                    <td>None</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <!-- Table Tags Section -->
+        <h3 class="section" id="table">Table Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Attributes</th>
+                    <th>Self-Closing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p class="tag">&lt;table&gt;<#/td>
+                    <td>Table</td>
+                    <td>Defines a table</td>
+                    <td>border</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;tr&gt;</p></td>
+                    <td>Table Row</td>
+                    <td>Defines a row in the table</td>
+                    <td>None</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;td&gt;</p></td>
+                    <td>Table Data</td>
+                    <td>Defines a cell in the table</td>
+                    <td>colspan, rowspan</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><p class="tag">&lt;th&gt;</p></td>
+                    <td>Table Header</td>
+                    <td>Defines a header cell</td>
+                    <td>colspan, rowspan</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
 </html>
